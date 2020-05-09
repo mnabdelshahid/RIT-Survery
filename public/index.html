@@ -1,0 +1,105 @@
+<div className="App">
+  <header className="App-header">
+  <h1 id="title">RIT Survey Form</h1>
+<div id="form-outer">
+<p id="description">
+Share your experience being at Rochester Insitute of Technology
+</p>
+<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+<div class="rowTab">
+  <div class="labels">
+    <label id="name-label" for="name"> Name: </label>
+  </div>
+  <div class="rightTab">
+    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label id="email-label" for="email"> Email: </label>
+  </div>
+  <div class="rightTab">
+    <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label id="number-label" for="year"> College Year (if applicable): </label>
+  </div>
+  <div class="rightTab">
+    <input type="number" name="year" id="number" min="1" max="15" class="input-field" placeholder="Enter your year of college">
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="currentPos">Which occupation best describes you at RIT?</label>
+  </div>
+  <div class="rightTab">
+    <select id="dropdown" name="currentPos" class="dropdown">
+  <option disabled selected value>Select an option</option>
+  <option  value="student">Student </option>
+  <option value="staff">Staff</option>
+  <option
+          value="student staff">Student and Staff</option>
+  <option value="alumni">Alumni</option>
+</select>
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="userRating"> How likely would you recommend others to take classes at RIT? </label>
+  </div>
+  <div class="rightTab">
+    <ul style="list-style: none;">
+      <li class="radio"><label>Very likely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+      <li class="radio"><label>Somewhat likely<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+      <li class="radio"><label>Neutral<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+      <li class="radio"><label>Somewhat unlikely<input name="radio-buttons" value="4"  type="radio" class="userRatings" ></label></li>
+      <li class="radio"><label>Very unlikely<input name="radio-buttons" value="5"  type="radio" class="userRatings" ></label></li>
+    </ul>
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="most-like">Why did you come to RIT?: </label>
+  </div>
+  <div class="rightTab">
+    <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+  <option value="deaf program">Deaf Program</option>
+  <option value="top ranked">Top Ranked </option>
+  <option value="scholarships">Scholarships</option>
+       <option value="innovative university"> Innovative University </option>
+</select>
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="preferences">Thing(s) you like about RIT:<br>(Check all that apply): </label>
+  </div>
+  <div class="rightTab">
+    <ul id="preferences" style="list-style: none;">
+      <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Education</label></li>
+      <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Food</li>
+      <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Sports</label></li>
+      <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Clubs</label></li>
+      <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Technology</label></li>
+      <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings"> Weather</label></li>
+      <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">People</label></li>
+      <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Learning American Sign Language</label></li>
+      <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Professors</label></li>
+      <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Receration</label></li>
+      <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Faterinity/Sorority</label></li>
+    </ul>
+  </div>
+</div>
+<div class="rowTab">
+  <div class="labels">
+    <label for="comments"> Any comments you want to say about RIT? </label>
+  </div>
+  <div class="rightTab">
+    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+  </div>
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
